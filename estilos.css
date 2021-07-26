@@ -1,0 +1,265 @@
+
+h1{
+	font-size: 40pt;
+	font-family: sans-serif;
+	color: blue;
+
+
+}
+h2{
+	background-color: cornflowerblue; 
+	margin-left: 35%;
+	margin-right: 35%;
+	margin-top: 5%;
+	height: 35%;
+	width: 35%
+}
+h3{
+		background-color: cornflowerblue; 
+	margin-left: 35%;
+	margin-right: 35%;
+	margin-top: 5%;
+	height: 35%;
+	width: 35%;
+}
+h4{
+
+	background-color: cornflowerblue; 
+	margin-left: 35%;
+	margin-right: 35%;
+	margin-top: 5%;
+	height: 35%;
+	width: 35%;
+}
+h5{
+	background-color: 	gray;
+	margin-left: 35%;
+	margin-right: 35%;
+	margin-top: 5%;
+	height: 35%;
+	width: 35%;
+}
+}
+footer{
+	background-color: white;
+}
+p{
+	color: blue;
+}
+body{
+	background-color: deeppink;
+}
+
+
+
+
+
+
+.displayInline{
+display: inline;
+}
+.marginIzquierda{
+	margin-left: 80%;
+}
+.margen{
+	margin-left: 40%;
+	margin-right: 40%;
+}
+.italica{
+	font-style: italic;
+}
+.normal{
+	font-weight: normal;
+}
+.negrita{
+	font-weight: bold;
+}
+.alCentro{
+	text-align: center;
+}
+.alaDerecha{
+	text-align: right;
+}
+.textoGrande{
+font-size: 200%
+}
+.fondoBlanco{
+	background-color: white;
+}
+.fondoBeige{
+	background-color: beige;
+}
+.subrayado{
+	text-decoration: underline;
+}
+.letraNegra{
+	color: black;
+}
+.row{
+	display:flex ;
+	flex-wrap: wrap;
+}
+
+nav{
+	display: flex;
+	flex-direction: row;
+	background-color: black;
+}
+nav a{
+	color: white;
+	padding: 14px 20px;
+}
+aside{
+	flex:  30px;
+	background-color: beige;
+	padding: 20px;
+}
+ol{
+	list-style: disc;
+}
+section{
+	background-color: cornflowerblue;
+}
+div{
+	background-color: gray;
+}	
+
+ul{
+list-style: none;
+font-size: 0;
+}
+li{
+	display: inline-block;
+	width: 25%;
+	position: relative;
+	font-size: 14px;
+}
+ul ul{
+position: absolute;
+display: none;
+}
+ul ul li{
+	display: block;
+}
+ul li:hover ul{
+	display: block;
+}
+
+
+
+
+
+.padre-flex{
+	display: flex;
+	flex-direction: row;
+	padding: 5px;
+	border:  2px solid black;
+	justify-content: space-around;
+	height: 130px;
+	align-items: stretch;
+	
+}
+.padre-flex div{
+	background-color: cornflowerblue;
+	width: 100px;
+	margin: 40px;
+	text-align: center;
+	line-height: 20px;
+	font-size: 20px;
+	border: 2px 2 solid black;
+	flex-grow: 1;
+}
+
+
+.fondoverde{
+	background-color:#9BE512;
+}
+
+.grilla{
+	display: grid;
+	grid-template-columns: auto 1fr auto;
+	grid-template-rows: auto 1fr auto;
+	background-color: hotpink;
+	grid-template-areas: 'aside header bside'
+	'aside main bside';
+}
+.grilla div{	
+	border:  1px solid black;
+	padding: 100px;
+}
+.imagenGrid{
+	grid-area: aside;
+	background-color: violet;
+}
+.imagenGrid2{
+	grid-area: bside;
+	background-color: violet;
+}
+.header{
+	grid-area: header;
+}
+.main{
+	grid-area: main;
+}
+
+@media(max-width: 480px){
+	body{
+		background-color: blueviolet;
+	}
+}
+
+@media(min-width: 600px){
+	body{
+		background-color: deeppink;
+	}
+}
+@media(min-width:  1024px){
+	body{
+		background-color: aliceblue;
+	}
+}
+.grad{
+	background-image: linear-gradient(violet,cornflowerblue,violet);
+}
+.gradradial{
+	background-image: radial-gradient(cornflowerblue,violet);
+}
+
+
+.trans{
+	transition: all: 1s;
+}
+
+.trans:hover{
+height: 50px; 
+width: 80px;
+padding: 20px;
+background-color: lightblue	;
+}
+
+.key{
+animation-name: efecto;
+animation-delay: 2s;
+animation-iteration-count: infinite;
+animation-duration: 3s;
+}
+
+@keyframes efecto{
+	0%{
+		background-image: linear-gradient(to bottom right,violet,cornflowerblue,violet);
+	}
+	25%{
+
+	}
+	50%{
+		background-image: linear-gradient(to bottom right,lightblue,yellow,blueviolet);
+	}
+	75%{
+		background-image: linear-gradient(to bottom right,green,red,blue);
+	}
+	100%{
+		background-image: linear-gradient(to bottom right,violet,red,violet);
+	}
+}
+
+
